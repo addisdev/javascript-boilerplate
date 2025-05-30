@@ -1,7 +1,7 @@
 // Simple HTTP Client 
 // Supports GET and POST requests, JSON parsing, and Authorization headers
 
-class HttpClient {
+export class HttpClient {
   constructor(baseURL = '') {
     this.baseURL = baseURL;
   }
@@ -63,5 +63,3 @@ class HttpClient {
 // const client = new HttpClient('https://api.example.com');
 // client.get('/data', 'your_auth_token_here').then(console.log).catch(console.error);
 // client.post('/submit', { key: 'value' }, 'your_auth_token_here').then(console.log).catch(console.error);
-
-export default HttpClient;
